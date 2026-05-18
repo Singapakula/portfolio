@@ -50,7 +50,7 @@ const Contact = () => {
 
               <div>
                 <h4>Email</h4>
-                <p>yourmail@gmail.com</p>
+                <p>vamshi.singapakula@gmail.com</p>
               </div>
 
             </div>
@@ -64,7 +64,7 @@ const Contact = () => {
 
               <div>
                 <h4>Phone</h4>
-                <p>+91 9876543210</p>
+                <p>+91 9505481298</p>
               </div>
 
             </div>
@@ -78,7 +78,7 @@ const Contact = () => {
 
               <div>
                 <h4>Location</h4>
-                <p>Telangana, India</p>
+                <p>Hyderabad, Telangana, India</p>
               </div>
 
             </div>
