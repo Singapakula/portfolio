@@ -1,0 +1,85 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT COLORS */
+:root {
+  /* MAIN BACKGROUNDS */
+  --bg-primary: #050816;
+  --bg-secondary: #0b1120;
+  --card-bg: rgba(17, 25, 40, 0.75);
+
+  /* TEXT */
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* ACCENT COLORS */
+  --accent-blue: #38bdf8;
+  --accent-purple: #8b5cf6;
+  --accent-cyan: #06b6d4;
+
+  /* BORDERS */
+  --border-color: rgba(255, 255, 255, 0.08);
+
+  /* SHADOWS */
+  --shadow-primary: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  /* GLASS EFFECT */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* BODY */
+body {
+  background: linear-gradient(to bottom, #050816, #0b1120);
+
+  color: var(--text-primary);
+
+  font-family: "Inter", sans-serif;
+
+  overflow-x: hidden;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BUTTON */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    scroll-margin-top: 60px;
+  }
+}

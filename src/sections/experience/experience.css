@@ -1,0 +1,456 @@
+.experience {
+  padding: 90px 0;
+
+  position: relative;
+}
+
+/* =========================
+    HEADER
+========================= */
+
+.experience-header {
+  text-align: center;
+
+  margin-bottom: 80px;
+}
+
+/* TITLE */
+.experience-title {
+  font-size: 52px;
+
+  margin-bottom: 20px;
+}
+
+.experience-title span {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SUBTITLE */
+.experience-subtitle {
+  max-width: 760px;
+
+  margin: auto;
+
+  color: var(--text-secondary);
+
+  line-height: 1.9;
+
+  font-size: 17px;
+}
+
+/* =========================
+    DOMAIN GRID
+========================= */
+
+.experience-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  margin-bottom: 120px;
+}
+
+/* DOMAIN CARD */
+.experience-card {
+  padding: 35px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  backdrop-filter: blur(12px);
+
+  transition: 0.4s ease;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(56, 189, 248, 0.3);
+
+  box-shadow: 0 20px 40px rgba(56, 189, 248, 0.08);
+}
+
+/* GLOW */
+.experience-card::before,
+.timeline-card::before {
+  content: "";
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(80px);
+}
+
+/* DOMAIN GLOW */
+.experience-card::before {
+  width: 200px;
+  height: 200px;
+
+  background: rgba(56, 189, 248, 0.08);
+
+  top: -80px;
+  right: -80px;
+}
+
+/* ICON */
+.experience-icon,
+.company-icon {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(56, 189, 248, 0.1);
+
+  color: var(--accent-cyan);
+
+  border: 1px solid rgba(56, 189, 248, 0.18);
+}
+
+/* DOMAIN ICON */
+.experience-icon {
+  width: 70px;
+  height: 70px;
+
+  border-radius: 20px;
+
+  margin-bottom: 25px;
+
+  font-size: 28px;
+}
+
+/* DOMAIN TITLE */
+.experience-card h3 {
+  font-size: 24px;
+
+  margin-bottom: 25px;
+}
+
+/* LIST RESET */
+.experience-card ul,
+.responsibilities ul {
+  list-style: none;
+}
+
+/* DOMAIN ITEMS */
+.experience-card li,
+.responsibilities li {
+  position: relative;
+
+  color: var(--text-secondary);
+}
+
+/* DOMAIN LIST */
+.experience-card li {
+  margin-bottom: 16px;
+
+  padding-left: 22px;
+
+  line-height: 1.6;
+}
+
+/* RESPONSIBILITY LIST */
+.responsibilities li {
+  padding-left: 24px;
+
+  margin-bottom: 16px;
+
+  line-height: 1.7;
+}
+
+/* CUSTOM BULLET */
+.experience-card li::before,
+.responsibilities li::before {
+  content: "";
+
+  position: absolute;
+
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: var(--accent-cyan);
+
+  left: 0;
+  top: 10px;
+}
+
+/* =========================
+    TIMELINE SECTION
+========================= */
+
+.timeline-wrapper {
+  margin-top: 40px;
+}
+
+/* TIMELINE HEADING */
+.timeline-heading {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.timeline-heading h2 {
+  font-size: 48px;
+
+  margin-bottom: 18px;
+}
+
+.timeline-heading h2 span {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timeline-heading p {
+  color: var(--text-secondary);
+
+  max-width: 700px;
+
+  margin: auto;
+
+  line-height: 1.8;
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 40px;
+}
+
+/* TIMELINE CARD */
+.timeline-card {
+  display: grid;
+
+  grid-template-columns: 320px 1fr;
+
+  gap: 40px;
+
+  padding: 40px;
+
+  border-radius: 35px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.06);
+
+  backdrop-filter: blur(12px);
+
+  position: relative;
+
+  overflow: hidden;
+
+  transition: 0.4s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(56, 189, 248, 0.25);
+
+  box-shadow: 0 20px 50px rgba(56, 189, 248, 0.08);
+}
+
+/* TIMELINE GLOW */
+.timeline-card::before {
+  width: 250px;
+  height: 250px;
+
+  background: rgba(56, 189, 248, 0.07);
+
+  top: -100px;
+  right: -100px;
+}
+
+/* LEFT */
+.timeline-left {
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+
+  padding-right: 30px;
+}
+
+/* COMPANY ICON */
+.company-icon {
+  width: 80px;
+  height: 80px;
+
+  border-radius: 24px;
+
+  margin-bottom: 25px;
+
+  font-size: 32px;
+}
+
+/* COMPANY */
+.timeline-left h3 {
+  font-size: 30px;
+
+  margin-bottom: 14px;
+}
+
+/* ROLE */
+.role,
+.duration,
+.location {
+  display: block;
+}
+
+/* ROLE */
+.role {
+  font-size: 18px;
+
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+/* DURATION */
+.duration {
+  color: var(--accent-cyan);
+
+  margin-bottom: 10px;
+}
+
+/* LOCATION */
+.location {
+  color: var(--text-secondary);
+}
+
+/* RIGHT */
+.timeline-right {
+  position: relative;
+
+  z-index: 2;
+}
+
+/* PROJECT */
+.project-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+}
+
+.project-header svg {
+  color: var(--accent-cyan);
+
+  font-size: 22px;
+}
+
+.project-header h4 {
+  font-size: 28px;
+}
+
+/* DESCRIPTION */
+.experience-description {
+  color: var(--text-secondary);
+
+  line-height: 1.9;
+
+  margin-bottom: 35px;
+}
+
+/* RESPONSIBILITIES */
+.responsibilities h5,
+.technology-section h5 {
+  font-size: 20px;
+
+  margin-bottom: 22px;
+}
+
+/* RESPONSIBILITY LIST */
+.responsibilities ul {
+  margin-bottom: 35px;
+}
+
+/* TECH STACK */
+.tech-stack {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 14px;
+}
+
+/* TECH BADGES */
+.tech-stack span {
+  padding: 10px 16px;
+
+  border-radius: 40px;
+
+  background: rgba(56, 189, 248, 0.08);
+
+  border: 1px solid rgba(56, 189, 248, 0.15);
+
+  color: var(--accent-cyan);
+
+  font-size: 14px;
+}
+
+/* =========================
+    RESPONSIVE
+========================= */
+
+@media screen and (max-width: 992px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .timeline-card {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-left {
+    border-right: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+    padding-right: 0;
+
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-title,
+  .timeline-heading h2 {
+    font-size: 40px;
+  }
+
+  .timeline-card {
+    padding: 25px;
+  }
+
+  .project-header h4 {
+    font-size: 24px;
+  }
+
+  .timeline-left h3 {
+    font-size: 26px;
+  }
+}

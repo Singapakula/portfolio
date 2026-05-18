@@ -1,0 +1,86 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  z-index: 999;
+
+  backdrop-filter: blur(14px);
+
+  background: rgba(5, 8, 22, 0.7);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav-container {
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--accent-cyan);
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+
+  list-style: none;
+}
+
+.nav-links li {
+  position: relative;
+
+  color: var(--text-secondary);
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.nav-links li::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: -8px;
+
+  width: 0%;
+  height: 2px;
+
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+
+  transition: 0.3s ease;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+.resume-btn {
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 40px;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.resume-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);
+}
