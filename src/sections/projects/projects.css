@@ -71,10 +71,9 @@
 /* IMAGE */
 .project-image {
   position: relative;
-
   height: 260px;
-
   overflow: hidden;
+  resize: cover;
 }
 
 .project-image img {

@@ -98,11 +98,23 @@ const Contact = () => {
                 <FaInstagram />
               </a>
 
+
+            <a href="mailto:vamshi.singapakula@gmail.com">
+              <FaEnvelope />
+            </a>
+
             </div>
 
             {/* RESUME BUTTON */}
             <button className="resume-download-btn">
-              Download Resume
+               <a
+              href="/Vamshi_Resume.pdf"
+              download
+            
+            >
+
+                Download Resume
+                </a>
             </button>
 
           </div>

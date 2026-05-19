@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import './navbar.css';
+
+import {
+  FaBars,
+  FaTimes
+} from 'react-icons/fa';
 
 const Navbar = () => {
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const navItems = [
+
     {
       label: 'Home',
       id: 'home'
@@ -38,9 +47,10 @@ const Navbar = () => {
       label: 'Contact',
       id: 'contact'
     }
+
   ];
 
-  // SCROLL FUNCTION
+  // SCROLL
   const scrollToSection = (id) => {
 
     const section = document.getElementById(id);
@@ -55,6 +65,7 @@ const Navbar = () => {
   };
 
   return (
+
     <nav className="navbar">
 
       <div className="container nav-container">
@@ -64,27 +75,56 @@ const Navbar = () => {
           className="logo"
           onClick={() => scrollToSection('home')}
         >
-          Singapakula<span> Vamshi</span>
+
+         Vamshi <span> Singapakula</span>
+
         </h1>
 
+        {/* MOBILE MENU ICON */}
+        <div
+          className="menu-toggle"
+
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+
+          {
+            menuOpen
+              ? <FaTimes />
+              : <FaBars />
+          }
+
+        </div>
+
         {/* NAV LINKS */}
-        <ul className="nav-links">
+        <ul
+          className={
+            menuOpen
+              ? 'nav-links active'
+              : 'nav-links'
+          }
+        >
 
           {navItems.map((item, index) => (
 
             <li
               key={index}
-              onClick={() => scrollToSection(item.id)}
+
+              onClick={() => {
+
+                scrollToSection(item.id);
+
+                setMenuOpen(false);
+
+              }}
             >
+
               {item.label}
+
             </li>
 
           ))}
 
         </ul>
-
-        {/* BUTTON */}
-       
 
       </div>
 

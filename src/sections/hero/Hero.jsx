@@ -5,15 +5,12 @@ import { motion } from 'framer-motion';
 
 import {
   FaDownload,
-  FaArrowRight
+  FaArrowDown,
+  FaLinkedinIn,
+  FaEnvelope
 } from 'react-icons/fa';
 
-import Profile from '../../assets/images/Profile1.png';
-
-import {
-  fadeLeft,
-  fadeRight
-} from '../../utils/motion';
+import Profile from '../../assets/images/Profile3.png';
 
 const Hero = () => {
 
@@ -22,11 +19,9 @@ const Hero = () => {
     const section = document.getElementById('experience');
 
     if (section) {
-
       section.scrollIntoView({
         behavior: 'smooth'
       });
-
     }
   };
 
@@ -34,26 +29,27 @@ const Hero = () => {
 
     <section className="hero" id="home">
 
+      {/* BACKGROUND BLUR */}
+      <div className="hero-bg-blur"></div>
+
       <div className="container hero-container">
 
-        {/* RIGHT */}
+        {/* PROFILE IMAGE */}
         <motion.div
-          className="hero-right"
+          className="hero-image-section"
 
-          variants={fadeRight(0.4)}
+          initial={{ opacity: 0, y: -50 }}
 
-          initial="hidden"
+          animate={{ opacity: 1, y: 0 }}
 
-          whileInView="visible"
-
-          viewport={{ once: true }}
+          transition={{ duration: 1 }}
         >
 
           <motion.div
             className="hero-image-wrapper"
 
             animate={{
-              y: [0, -15, 0]
+              y: [0, -10, 0]
             }}
 
             transition={{
@@ -63,10 +59,6 @@ const Hero = () => {
             }}
           >
 
-            {/* GLOW */}
-            <div className="hero-glow"></div>
-
-            {/* IMAGE */}
             <img
               src={Profile}
               alt="Vamshi"
@@ -77,23 +69,16 @@ const Hero = () => {
 
         </motion.div>
 
-        {/* LEFT */}
+        {/* CONTENT */}
         <motion.div
-          className="hero-left"
+          className="hero-content"
 
-          variants={fadeLeft(0.2)}
+          initial={{ opacity: 0, y: 40 }}
 
-          initial="hidden"
+          animate={{ opacity: 1, y: 0 }}
 
-          whileInView="visible"
-
-          viewport={{ once: true }}
+          transition={{ duration: 1 }}
         >
-
-          {/* SMALL TAG */}
-          <div className="hero-tag">
-            Senior Software Engineer
-          </div>
 
           {/* TITLE */}
           <h1 className="hero-title">
@@ -104,30 +89,38 @@ const Hero = () => {
 
           {/* ROLE */}
           <h2 className="hero-role">
-                      {/* Senior */}
-                      Software Engineer at ur.life pvt ltd
+
+      Software Engineer at
+            <span> URLIFE LIFESTYLE WELLNESS LIMITED</span>
+
           </h2>
 
           {/* LOCATION */}
           <div className="hero-location">
+
             📍 Hyderabad, India
+
           </div>
 
           {/* DESCRIPTION */}
           <p className="hero-description">
 
-            A highly skilled and experienced developer
+            {/* A highly skilled and experienced developer
             specializing in building robust and scalable
             mobile and web applications using technologies
-            like React Native, Redux,
-            Redux-Thunk, Java Script, Type Script,React-Query, Redux-Toolkit and  React.js for Android & iOS platforms.
+            like React Native, Redux, Redux-Thunk,
+            JavaScript, TypeScript, React Query,
+            Redux Toolkit,for Android & iOS platforms */}
+            Results-driven React Native Mobile Application Developer with 3+ years of experience in designing, developing, and deploying high-performance cross-platform mobile applications for Android and iOS. Skilled in building scalable, maintainable, and user-centric applications using React Native, JavaScript, TypeScript, Redux, Redux Toolkit, Redux-Thunk, React Query, and modern mobile development practices. Experienced in API integration, state management, performance optimization, reusable component architecture, third-party integrations, and publishing applications to App Store and Play Store. Passionate about delivering clean UI/UX experiences, writing efficient code, and continuously exploring modern technologies to build impactful mobile solutions.
 
           </p>
+
+          {/* SOCIAL ICONS */}
+        
 
           {/* BUTTONS */}
           <div className="hero-buttons">
 
-            {/* VIEW WORK */}
             <button
               className="primary-btn"
               onClick={scrollToProjects}
@@ -135,22 +128,26 @@ const Hero = () => {
 
               View My Work
 
-              <FaArrowRight />
-
             </button>
 
-            {/* DOWNLOAD CV */}
             <a
-              href="/src/assets/Vamshi_Singapakula_Resume.pdf"
+              href="/Vamshi_Resume.pdf"
               download
               className="secondary-btn"
             >
 
-              Download CV
-
               <FaDownload />
 
+              Download CV
+
             </a>
+
+          </div>
+
+          {/* DOWN ICON */}
+          <div className="scroll-down">
+
+            <FaArrowDown />
 
           </div>
 
