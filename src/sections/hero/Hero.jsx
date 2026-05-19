@@ -6,8 +6,6 @@ import { motion } from 'framer-motion';
 import {
   FaDownload,
   FaArrowDown,
-  FaLinkedinIn,
-  FaEnvelope
 } from 'react-icons/fa';
 
 import Profile from '../../assets/images/Profile3.png';
@@ -115,7 +113,6 @@ const Hero = () => {
 
           </p>
 
-          {/* SOCIAL ICONS */}
         
 
           {/* BUTTONS */}
