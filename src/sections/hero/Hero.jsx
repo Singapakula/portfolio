@@ -8,7 +8,7 @@ import {
   FaArrowDown,
 } from 'react-icons/fa';
 
-import Profile from '../../assets/images/Profile3.png';
+import Profile from '../../assets/images/Profile.png';
 
 const Hero = () => {
 
