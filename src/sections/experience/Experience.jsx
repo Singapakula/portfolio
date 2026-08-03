@@ -6,12 +6,9 @@ import { motion } from "framer-motion";
 import {
   FaWallet,
   FaHeartbeat,
-  FaGraduationCap,
-  FaBookOpen,
   FaCode,
   FaBriefcase,
   FaBuilding,
-  FaRocket,
 } from "react-icons/fa";
 
 import { fadeUp } from "../../utils/motion";
@@ -47,32 +44,6 @@ const Experience = () => {
         "SQLite Offline Mode",
       ],
     },
-
-    // {
-    //   icon: <FaGraduationCap />,
-    //   title: 'E-Learning Platforms',
-
-    //   items: [
-    //     'Interactive Study Materials',
-    //     'Exam Schedules',
-    //     'Student Progress Tracking',
-    //     'Scalable Architecture',
-    //     'Quiz Systems'
-    //   ]
-    // },
-
-    // {
-    //   icon: <FaBookOpen />,
-    //   title: "Civils Preparation Apps",
-
-    //   items: [
-    //     "Timetable Modules",
-    //     "Practice Tests",
-    //     "Attendance Systems",
-    //     "Homework Tracking",
-    //     "Mock Testing Modules",
-    //   ],
-    // },
 
     {
       icon: <FaCode />,
