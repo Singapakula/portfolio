@@ -124,7 +124,7 @@ const Contact = () => {
 
             {/* RESUME BUTTON */}
             <a
-              href="/Vamshi_Resume.pdf"
+              href="/S_Vamshi_Resume.pdf"
               download
               className="resume-download-btn"
             >
